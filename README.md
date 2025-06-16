@@ -1,40 +1,44 @@
-# 🧠 Estructura de Computadores – Prácticas en Ensamblador (MIPS)
+# 🧠 Computer Architecture – MIPS Assembly Practice
 
-Este repositorio contiene una colección de ejercicios desarrollados en lenguaje ensamblador MIPS como parte de la asignatura **Estructura de Computadores**. Aunque no se conservan los enunciados originales, el código cubre operaciones fundamentales y avanzadas del uso de ensamblador en MIPS, incluyendo estructuras de control, aritmética, trabajo con vectores/matrices, y un ejemplo de vulnerabilidad tipo **buffer overflow**.
+This repository contains a collection of exercises written in MIPS assembly language, developed as part of the **Computer Architecture** course. Although the original problem statements are not available, the code covers both fundamental and advanced operations using MIPS assembly, including control structures, arithmetic, vector/matrix operations, and an example of a **buffer overflow** vulnerability.
 
-## 🔍 Descripción de Archivos Principales
 
-| Archivo                    | Descripción |
+
+## 🔍 Description of Main Files
+
+| File                       | Description |
 |---------------------------|-------------|
-| `boolean.asm`             | Implementa operaciones booleanas simples. |
-| `contador.asm`            | Realiza un conteo ascendente o descendente. |
-| `Desbordamiento.asm`      | Simula una vulnerabilidad de **desbordamiento de búfer** (buffer overflow). |
-| `division.asm`            | Realiza divisiones enteras, posiblemente con manejo de excepciones. |
-| `interpolacion_lineal.asm`| Cálculo de interpolación lineal a partir de dos puntos. |
-| `mipsBucle.asm`           | Implementación de bucles simples. |
-| `prueba_for.asm`          | Simulación del comportamiento de un bucle `for`. |
-| `str_len_opt.asm`         | Optimización del cálculo de longitud de cadena. |
-| `suma.asm`                | Suma de dos números simples. |
-| `suma_matriz_opt.asm`     | Suma optimizada en matrices. |
-| `suma_tabla_opt.asm`      | Suma de datos organizados en tablas. |
-| `suma_vector_opt.asm`     | Cálculo eficiente de la suma de vectores. |
-| `vector_int_minmax.asm`   | Búsqueda de valor mínimo y máximo en un vector. |
+| `boolean.asm`             | Implements basic boolean operations. |
+| `contador.asm`            | Performs a counting loop (increment/decrement). |
+| `Desbordamiento.asm`      | Demonstrates a **buffer overflow** vulnerability. |
+| `division.asm`            | Integer division, possibly with exception handling. |
+| `interpolacion_lineal.asm`| Performs linear interpolation from two points. |
+| `mipsBucle.asm`           | Simple loop implementation. |
+| `prueba_for.asm`          | Simulates the logic of a `for` loop. |
+| `str_len_opt.asm`         | Optimized string length algorithm. |
+| `suma.asm`                | Basic addition of two integers. |
+| `suma_matriz_opt.asm`     | Optimized matrix summation. |
+| `suma_tabla_opt.asm`      | Summation of structured table data. |
+| `suma_vector_opt.asm`     | Efficient summation of a vector. |
+| `vector_int_minmax.asm`   | Finds minimum and maximum values in a vector. |
 
-## 🧪 Buffer Overflow – Análisis Visual
+## 🧪 Buffer Overflow – Visual Analysis
 
-En la carpeta `Desbordamiento/` se incluyen dos imágenes que ayudan a visualizar el funcionamiento del ataque de desbordamiento de pila:
+The `Desbordamiento/` folder includes two images that help visualize how the stack behaves during a buffer overflow:
 
-- `pila_ataque.png`: muestra el estado de la pila tras la inyección de datos maliciosos.
-- `pila_partida.png`: muestra cómo se sobrescriben direcciones de retorno o datos críticos.
+- `pila_ataque.png`: shows the stack after malicious data injection.
+- `pila_partida.png`: illustrates how return addresses or critical data are overwritten.
 
-Estas imágenes están asociadas al código en `Desbordamiento.asm`.
+These images relate to the code in `Desbordamiento.asm`.
 
-## ⚙️ Requisitos
+## ⚙️ Requirements
 
-- Simulador **MARS** o **QtSPIM** para ejecutar los programas MIPS.
-- Recomendado: Linux con soporte para SPIM/MIPS si deseas compilar en entorno real (educativo).
+- **MARS** or **QtSPIM** simulator to run the MIPS programs.
+- Optional: Linux environment with SPIM/MIPS support for native (educational) compilation.
 
-## 🧠 Notas
+## 🧠 Notes
 
-Este código ha sido desarrollado de forma individual como parte del proceso de aprendizaje, y puede servir como referencia o punto de partida para otros estudiantes que estén trabajando con arquitectura MIPS o similares.
+This code was developed individually as part of the learning process. It may serve as a reference or starting point for other students working on MIPS architecture or similar assembly languages.
+
+
 
